@@ -1,6 +1,10 @@
 # 本地文档不参与远程仓库（仅本机保留）
 /docs/
 
+# 本地计划与修改记录不上传 GitHub
+PLAN.MD
+LOCAL_MODIFIED_FILES.md
+
 # Maven
 target/
 pom.xml.tag
