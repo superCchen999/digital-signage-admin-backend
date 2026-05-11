@@ -1,11 +1,12 @@
 package com.digitalsignage.admin;
 
+import com.digitalsignage.admin.security.JwtProperties;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
+import org.springframework.boot.context.properties.EnableConfigurationProperties;
 
 @SpringBootApplication
-@EnableJpaAuditing
+@EnableConfigurationProperties(JwtProperties.class)
 public class DigitalSignageAdminApplication {
 
     public static void main(String[] args) {
