@@ -44,3 +44,9 @@ app:
     secret: ${JWT_SECRET:0123456789abcdef0123456789abcdef}
     access-token-minutes: ${JWT_ACCESS_MINUTES:15}
     refresh-token-days: ${JWT_REFRESH_DAYS:14}
+
+  # 媒体直传：upload-policy 返回 objectKey；可选配置公网访问前缀与预签名 URL 模板（{objectKey} 占位）
+  storage:
+    public-base-url: ${STORAGE_PUBLIC_BASE_URL:}
+    presigned-put-url-template: ${STORAGE_PRESIGNED_PUT_URL_TEMPLATE:}
+    upload-policy-expire-minutes: ${STORAGE_UPLOAD_POLICY_EXPIRE_MINUTES:60}

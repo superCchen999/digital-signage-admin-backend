@@ -1,12 +1,13 @@
 package com.digitalsignage.admin;
 
+import com.digitalsignage.admin.media.config.MediaStorageProperties;
 import com.digitalsignage.admin.security.JwtProperties;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 
 @SpringBootApplication
-@EnableConfigurationProperties(JwtProperties.class)
+@EnableConfigurationProperties({JwtProperties.class, MediaStorageProperties.class})
 public class DigitalSignageAdminApplication {
 
     public static void main(String[] args) {
